@@ -589,12 +589,13 @@ body {
   padding: 10px 15px;
   color: #FFFFFF;
   border: 1px solid transparent;
+  margin-bottom: 20px;
 }
 
 .design {
   width: 400px;
   position: absolute;
-  left: 808px;
+  left: 770px;
   top: 30px;
 }
 
@@ -615,7 +616,7 @@ body {
 .main__line {
   position: absolute;
   height: 1px;
-  width: 158vh;
+  width: 165vh;
   background-color: #fff;
   top: 10px;
   left: 25px;

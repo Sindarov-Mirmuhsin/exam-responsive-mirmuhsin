@@ -1,0 +1,101 @@
+.form{
+  margin-top: 50px;
+}
+
+.main__inner{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__text{
+  color: #FFFFFF;
+}
+
+.form__input--ism{
+  width: 393px;
+}
+
+.form__input--tg{
+  width: 338px;
+}
+
+.form__input--sayt{
+  width: 287px;
+}
+
+.form__box{
+  display: flex;
+  align-items: center;
+}
+
+.form__label{
+  margin-bottom: 20px;
+}
+
+.form__label + .form__label{
+  margin-left: 30px;
+}
+
+.form__input{
+  padding: 14px 25px;
+  border-radius: 25px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  border: 1px solid #FFFFFF;
+}
+
+.form__taria{
+  width: 670px;
+  height: 170px;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 20px;
+  border: 1px solid #FFFFFF;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+.form__btn{
+  display: block;
+  background: #0040DD;
+  border-radius: 50px;
+  padding: 10px 15px;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+}
+
+.design{
+  width: 400px;
+  position: absolute;
+  left: 808px;
+  top: 30px;
+}
+
+.design__title{
+  font-size: 32px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.design__text{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.main__line{
+  position: absolute;
+  height: 1px;
+  width: 158vh;
+  background-color: #fff;
+  top: 10px;
+  left: 25px;
+}
+
+@media only screen and (max-width: 375px){
+  .form__box{
+    align-items: baseline;
+  }
+}

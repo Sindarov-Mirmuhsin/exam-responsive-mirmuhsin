@@ -379,7 +379,253 @@ img {
 }
 
 .container {
+  width: 100%;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
+}
+
+body {
+  background-color: #000;
+}
+
+.site-header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 65px;
+}
+
+.nav {
+  margin-right: 50px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+}
+
+.site-header__line {
+  position: absolute;
+  height: 115vh;
+  width: 1px;
+  background-color: #fff;
+  top: -68px;
+  left: 750px;
+}
+
+.nav__item {
+  list-style-type: none;
+}
+
+.nav__item + .nav__item {
+  margin-left: 35px;
+}
+
+.nav__link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nav__link--info {
+  color: #FFFFFF;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.lan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  opacity: 0.6;
+  border: 1px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 75px;
+  padding: 8px 10px;
+}
+
+.lan__item {
+  list-style-type: none;
+}
+
+.lan__item + .lan__item {
+  margin-left: 10px;
+}
+
+.lan__link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.lan__link--info {
+  color: #FFFFFF;
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.site-header__btn {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  color: #fff;
+  border: 0;
+  background-image: url(../images/frame.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .site-header__inner {
+    width: 1100px;
+  }
+  .nav__list {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .main__line {
+    width: 470vh;
+  }
+  .site-header__line {
+    height: 339vh;
+  }
+  .site-header__btn {
+    display: block;
+  }
+}
+
+.form {
+  margin-top: 50px;
+}
+
+.main__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__text {
+  color: #FFFFFF;
+}
+
+.form__input--ism {
+  width: 393px;
+}
+
+.form__input--tg {
+  width: 338px;
+}
+
+.form__input--sayt {
+  width: 287px;
+}
+
+.form__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__label {
+  margin-bottom: 20px;
+}
+
+.form__label + .form__label {
+  margin-left: 30px;
+}
+
+.form__input {
+  padding: 14px 25px;
+  border-radius: 25px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  border: 1px solid #FFFFFF;
+}
+
+.form__taria {
+  width: 670px;
+  height: 170px;
+  border-radius: 25px;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 20px;
+  border: 1px solid #FFFFFF;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+.form__btn {
+  display: block;
+  background: #0040DD;
+  border-radius: 50px;
+  padding: 10px 15px;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+}
+
+.design {
+  width: 400px;
+  position: absolute;
+  left: 808px;
+  top: 30px;
+}
+
+.design__title {
+  font-size: 32px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.design__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.main__line {
+  position: absolute;
+  height: 1px;
+  width: 158vh;
+  background-color: #fff;
+  top: 10px;
+  left: 25px;
+}
+
+@media only screen and (max-width: 375px) {
+  .form__box {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 /*# sourceMappingURL=main.css.map */
